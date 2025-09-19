@@ -1,9 +1,12 @@
+# app.py
 import streamlit as st
 
+def square(n):
+    return n ** 2
 
 st.title('calc')
-st.write('enter a num')
-n=st.number_input('enter an int',value=1,step=1)
+st.write('Enter a number')
+n = st.number_input('Enter an int', value=1, step=1)
 
-sq=n**2
+sq = square(n)
 st.write(sq)
